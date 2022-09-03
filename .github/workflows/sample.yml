@@ -17,3 +17,14 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: windows powershell commands
+        run: Get-Location
+      - name: bash command in windows
+        run: |
+         hostname
+         whoami
+         pwd
+        shell: bash
