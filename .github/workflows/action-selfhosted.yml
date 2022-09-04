@@ -1,4 +1,4 @@
-name: Shell commands
+name: Shell commands on self hosted server
 
 on: [push]
 
@@ -7,4 +7,8 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: echo a string
-        run: echo "Hello World!"  
+        run: |
+          echo "Hello World!"
+          hostname
+          whoami
+          pwd
