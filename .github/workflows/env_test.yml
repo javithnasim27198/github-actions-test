@@ -44,3 +44,11 @@ jobs:
           echo "${BUILD_NUMBER}"
           echo "${BUILD_USER}"
           echo "${BUILD_ECHO}"
+      - name: github env check
+        run: |
+          echo "${V9_ARTEFACT_SUFFIX}"
+          echo "${ARTEFACT_NAME}"
+          echo "${BUILD_NUMBER}"
+          echo "${BUILD_USER}"
+          echo "${BUILD_ECHO}"
+      
