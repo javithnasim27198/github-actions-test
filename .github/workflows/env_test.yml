@@ -9,7 +9,7 @@ on:
 env:
   BUILD_NUMBER: 1
   BUILD_USER: 'javith'
-  BUILD_ECHO: ${BUILD_NUMBER}
+  BUILD_ECHO: ${{ env.BUILD_NUMBER }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
