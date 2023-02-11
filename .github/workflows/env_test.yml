@@ -9,7 +9,7 @@ on:
 env:
   BUILD_NUMBER: 1
   BUILD_USER: 'javith'
-  BUILD_ECHO: ${{ env.BUILD_NUMBER }}
+  BUILD_ECHO: 'test'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,6 +36,7 @@ jobs:
       - name: env check
         run: |
           env
-          echo "${BUILD_NUMBER}"
-          echo "${BUILD_USER}"
-          echo "${BUILD_ECHO}"
+          echo "${GITHUB_ENV}"
+          #echo "${BUILD_NUMBER}"
+          #echo "${BUILD_USER}"
+          #echo "${BUILD_ECHO}"
