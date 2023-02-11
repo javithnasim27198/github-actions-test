@@ -54,5 +54,6 @@ jobs:
           echo "${{ env.V9_ARTEFACT_SUFFIX }}"
           ls -lrt
           cat > filename_${{ env.V9_ARTEFACT_SUFFIX }}
+          cat > filename_${{ env.BUILD_USER }}
           ls -lrt
       
