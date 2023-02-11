@@ -51,4 +51,7 @@ jobs:
           echo "${BUILD_NUMBER}"
           echo "${BUILD_USER}"
           echo "${BUILD_ECHO}"
+          ls -lrt
+          cat filename_${env.V9_ARTEFACT_SUFFIX}
+          ls -lrt
       
