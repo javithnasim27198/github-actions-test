@@ -39,6 +39,8 @@ jobs:
           echo "V9_ARTEFACT_SUFFIX=adhoc-$GITHUB_RUN_NUMBER" >> $GITHUB_ENV
           echo "ARTEFACT_NAME=web-adhoc-$GITHUB_RUN_NUMBER" >> $GITHUB_ENV
           echo "Testing.....${GITHUB_ENV}"
-          #echo "${BUILD_NUMBER}"
-          #echo "${BUILD_USER}"
-          #echo "${BUILD_ECHO}"
+          echo "${V9_ARTEFACT_SUFFIX}"
+          echo "${ARTEFACT_NAME}"
+          echo "${BUILD_NUMBER}"
+          echo "${BUILD_USER}"
+          echo "${BUILD_ECHO}"
